@@ -230,31 +230,30 @@ void BinaryInsertionSort(int a[], int n) {
 
 void ShakerSort(int a[], int n) {
 	int left = 0, right = n - 1;
-	int index = 0;
+	bool swapped = false;
 
 	while (left < right)
 	{
-		for (int i = left; i < right; i++)
-		{
-			if (a[i] > a[i + 1])
-			{
+		for (int i = left; i < right; i++) {
+			if (a[i] > a[i + 1]) {
 				SwapData(&a[i], &a[i + 1]);
-				index = i;
+				swapped = false;
 			}
 		}
 
-		right = index;
-		
-		for (int i = right; i > left; i--)
-		{
-			if (a[i] < a[i - 1])
-			{
+		if (swapped) {
+			break;
+		}
+
+		right--;
+
+		for (int i = right; i > left; i--) {
+			if (a[i] < a[i - 1]) {
 				SwapData(&a[i], &a[i - 1]);
-				index = i;
 			}
 		}
 
-		left = index;
+		left++;
 	}
 }
 
@@ -434,12 +433,4 @@ void Timsort(int a[], int n) {
 			MergeArray(a, left, right, middle);
 		}
 	}
-}
-
-void Introsort(int a[], int n) {
-	
-}
-
-void Wikisort(int a[], int n) {
-
 }

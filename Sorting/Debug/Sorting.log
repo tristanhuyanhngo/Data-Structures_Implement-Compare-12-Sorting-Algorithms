@@ -1,3 +1,2 @@
 ﻿  main.cpp
-D:\QST\2. Second Year\1. First Semester\1. Data Structure & Algorithm\Labs\19CLC6\2. Sorting - Midterm\Sorting\Sorting\main.cpp(6,18): warning C4101: 'temp': unreferenced local variable
-  Sorting.vcxproj -> D:\QST\2. Second Year\1. First Semester\1. Data Structure & Algorithm\Labs\19CLC6\2. Sorting - Midterm\Sorting\Debug\Sorting.exe
+D:\QST\2. Second Year\1. First Semester\1. Data Structure & Algorithm\Labs\19CLC6\2. Sorting - Midterm\Sorting\Sorting\main.cpp(3): fatal error C1075: '{': no matching token found

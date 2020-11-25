@@ -39,5 +39,3 @@ void FlashSort(int a[], int n, int m);
 
 // Hybrid Algorithms
 void Timsort(int a[], int n);
-void Introsort(int a[], int n);
-void Wikisort(int a[], int n);
